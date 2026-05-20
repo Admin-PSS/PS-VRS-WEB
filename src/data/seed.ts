@@ -16,20 +16,21 @@ export async function seedIfEmpty(): Promise<void> {
 
   console.info('Seeding reference tables from CSV…')
 
+  const base = import.meta.env.BASE_URL
   try {
     const [townships, rhcs, srhcs, villages, chwamws, orgs, drugs, lookups, lookupMains, userLevels, users] =
       await Promise.all([
-        loadCSV('/seed/sys_township.csv'),
-        loadCSV('/seed/sys_rhc.csv'),
-        loadCSV('/seed/sys_srhc.csv'),
-        loadCSV('/seed/sys_village.csv'),
-        loadCSV('/seed/sys_chwamw.csv'),
-        loadCSV('/seed/sys_org.csv'),
-        loadCSV('/seed/sys_drug.csv'),
-        loadCSV('/seed/sys_lookup.csv'),
-        loadCSV('/seed/sys_lookupMain.csv'),
-        loadCSV('/seed/sys_userLevel.csv'),
-        loadCSV('/seed/sys_user.csv'),
+        loadCSV(`${base}seed/sys_township.csv`),
+        loadCSV(`${base}seed/sys_rhc.csv`),
+        loadCSV(`${base}seed/sys_srhc.csv`),
+        loadCSV(`${base}seed/sys_village.csv`),
+        loadCSV(`${base}seed/sys_chwamw.csv`),
+        loadCSV(`${base}seed/sys_org.csv`),
+        loadCSV(`${base}seed/sys_drug.csv`),
+        loadCSV(`${base}seed/sys_lookup.csv`),
+        loadCSV(`${base}seed/sys_lookupMain.csv`),
+        loadCSV(`${base}seed/sys_userLevel.csv`),
+        loadCSV(`${base}seed/sys_user.csv`),
       ])
 
     const tables = [
