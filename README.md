@@ -1,6 +1,16 @@
 # VRS – Village Reporting System (Web)
 
-**VRS v2, 2019** is a Progressive Web App (PWA) and it digitises the MNCH (Maternal, Newborn & Child Health) field reporting workflow used by Community Health Workers (CHW) and Auxiliary Midwives (AMW) in rural townships, and provides supervisors with real-time aggregated reports — all without any server backend.
+**VRS v2, 2019** is a Progressive Web App (PWA) that digitises the MNCH (Maternal, Newborn & Child Health) field reporting workflow used by Community Health Workers (CHW) and Auxiliary Midwives (AMW) in rural townships, and provides supervisors with real-time aggregated reports — all without any server backend.
+
+🌐 **Live demo:** [https://admin-pss.github.io/PS-VRS-WEB/](https://admin-pss.github.io/PS-VRS-WEB/)
+
+---
+
+## Screenshots
+
+| Login | Field User | Supervisor |
+|-------|-----------|------------|
+| ![Login](public/Login.png) | ![Field User](public/FieldUser.png) | ![Supervisor](public/Supervisor.png) |
 
 ---
 

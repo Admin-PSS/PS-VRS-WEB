@@ -3,6 +3,8 @@ import react from '@vitejs/plugin-react'
 import { VitePWA } from 'vite-plugin-pwa'
 
 export default defineConfig({
+  // Use repo-name base when building on GitHub Actions for GitHub Pages
+  base: process.env.GITHUB_ACTIONS ? '/PS-VRS-WEB/' : '/',
   plugins: [
     react(),
     VitePWA({
