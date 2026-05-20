@@ -33,6 +33,16 @@ export default function Login() {
           <p style={{ color: 'var(--text-muted)', fontSize: '0.9rem' }}>Village Reporting System</p>
         </div>
 
+        {/* Demo credentials hint */}
+        <div style={{
+          marginBottom: '16px', padding: '10px 14px',
+          background: '#E3F2FD', borderRadius: '8px',
+          fontSize: '0.8rem', color: '#1565C0', lineHeight: '1.6',
+        }}>
+          <strong>Demo accounts</strong><br />
+          Admin / Admin &nbsp;·&nbsp; User / User &nbsp;·&nbsp; Field / Field
+        </div>
+
         <div className="card">
           {error && <div className="alert alert-error">{error}</div>}
           <form onSubmit={handleSubmit}>
